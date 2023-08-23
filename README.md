@@ -319,6 +319,10 @@ do
 	grep ^Sc $f | grep PASS | grep -v [ATCG],[ATCG] | perl -p -i -e 's/^.+AD\s+//' | perl -p -i -e 's/\S+:(\d+),(\d+)/\2/g' > ad2_$out
 done
 ```
-This creates allele depth files for each allele (ad1* and ad2*) and chromosome, which I am using to obtain maximum likelihood allele frequency estimates (this is just the sample frequency... even a beta-binomial model would give the same point estimate with a flat prior). I conducted PCAs and estimates of Fst by chromosome, along with window-based Fst scans for some populations. The code is [pcaFst.R](pcaFst.R). It all generally makes sense. The Eurasian sample is clearly the outgroup (followed by the Alaskan samples) and replicates are very similar. Most chromosomes have similar samples though the Z stands out, and interstingly puts ABM closer to idas and anna. The PCA is attached .
+This creates allele depth files for each allele (ad1* and ad2*) and chromosome, which I am using to obtain maximum likelihood allele frequency estimates (this is just the sample frequency... even a beta-binomial model would give the same point estimate with a flat prior). 
+
+These files are now in `/uufs/chpc.utah.edu/common/home/gompert-group4/projects/lyc_specGenomics/GenData`.
+
+I conducted PCAs and estimates of Fst by chromosome, along with window-based Fst scans for some populations. The code is [pcaFst.R](pcaFst.R). It all generally makes sense. The Eurasian sample is clearly the outgroup (followed by the Alaskan samples) and replicates are very similar. Most chromosomes have similar samples though the Z stands out, and interstingly puts ABM closer to idas and anna. The PCA is attached [FstLycSpc.pdf](FstLycSpc.pdf).
 
 
