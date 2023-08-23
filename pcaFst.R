@@ -10,6 +10,7 @@ ids<-read.table("IDs.txt",header=FALSE)
 temp<-gsub("ad1_filt_lycSpecPool_chrom","",a1f)
 chrom<-gsub(".txt","",temp)
 
+## PCA for each chromosome, see color defintions in IDs.txt
 pdf("WG_LG_PCAs.pdf",width=7,height=10.5)
 par(mfrow=c(3,2))
 par(mar=c(4.5,5.5,2.5,1.5))
@@ -41,7 +42,7 @@ for(i in 1:N){
 }
 dev.off()
 
-## Fst
+## allele frequencies and het for Fst
 P<-vector("list",24)
 n<-vector("list",24)
 H<-vector("list",24)
@@ -106,7 +107,7 @@ abline(a=0,b=1)
 ## mostly correlated, Z higher
 
 
-### window examples
+### window examples, set pairs with i and j, see ids or IDs.txt
 
 pdf("FstWinsABM20_SIN10.pdf",width=8,height=9)
 par(mfrow=c(3,2))
