@@ -35,6 +35,34 @@ The pool-seq data are currently in /uufs/chpc.utah.edu/common/home/gompert-group
 Replicates (rep) are the same DNA extractions re-pooled and sequenced as a distinct sample. MEN = outgroup. The data were generated and cleaned up by BGI. Reports for each round of sequencing are attached: [BGI_F22FTSUSAT0310-01_LYCgpswR_report_en.pdf](https://github.com/zgompert/LycSpaceTimePoolSeq/files/9940314/BGI_F22FTSUSAT0310-01_LYCgpswR_report_en.pdf)
 . 
 
+Wing pattern measurements for many populations exist. These come from [Lucas et al. 2018](https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.12777). The csv file is available from /uufs/chpc.utah.edu/common/home/gompert-group4/projects/lyc_specGenomics/TraitData/resid-sizeANDcoord-6vi17-subgroups-NoNA.csv. The table below shows what we have. In some cases different ID abbreviations were used for the genetic versus wing pattern data. This information is in the table. We could substitute some populations for measured ones, but I need to think about this still. 
+
+| Population | Wing ID | Wing sample size (N)| 
+|------------|---------|---------------------|
+| ABM | ABM | 25 |
+| BCR | BCR | 46 |
+| BHP | BHP | 18 |
+| BKM | BKM | 40 |
+| BTB | BTB | 43 |
+| CLH | CLH | 40 |
+| CP | CSP | 49 |
+| EP | EGP | 37 |
+| GNP | GNP | 81 |
+| HJ | NA | NA |
+| HNV | HNV | 8 |
+| LS | LKS | 19 |
+| MEN | NA | NA |
+| MR | MTR | 48 |
+| MTU | NA | NA |
+| SBW | NA | NA |
+| SHC | SHC | 16 |
+| SIN | SIN | 83 |
+| SUV | NA | NA |
+| TBY | NA | NA |
+| TIC | NA | NA |
+| VE | VCP | 20 |
+| YG | YBG | 75 |
+
 # DNA Sequence Alignment
 
 I am aligning the DNA sequence data to the updated (based on PacBio) *L. melissa* genome. I am using `bwa-mem2` for this, which is basically just a sped up version of `bwa mem` that also works directly with gzipped files [https://github.com/bwa-mem2/bwa-mem2](https://github.com/bwa-mem2/bwa-mem2). I am using `bwa-mem2` version 2.0pre2. 
