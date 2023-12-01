@@ -37,31 +37,33 @@ Replicates (rep) are the same DNA extractions re-pooled and sequenced as a disti
 
 Wing pattern measurements for many populations exist. These come from [Lucas et al. 2018](https://onlinelibrary.wiley.com/doi/abs/10.1111/1755-0998.12777). The csv file is available from /uufs/chpc.utah.edu/common/home/gompert-group4/projects/lyc_specGenomics/TraitData/resid-sizeANDcoord-6vi17-subgroups-NoNA.csv. The table below shows what we have. In some cases different ID abbreviations were used for the genetic versus wing pattern data. This information is in the table. We could substitute some populations for measured ones, but I need to think about this still. 
 
-| Population | Wing ID | Wing sample size (N)| 
-|------------|---------|---------------------|
-| ABM | ABM | 25 |
-| BCR | BCR | 46 |
-| BHP | BHP | 18 |
-| BKM | BKM | 40 |
-| BTB | BTB | 43 |
-| CLH | CLH | 40 |
-| CP | CSP | 49 |
-| EP | EGP | 37 |
-| GNP | GNP | 81 |
-| HJ | NA | NA |
-| HNV | HNV | 8 |
-| LS | LKS | 19 |
-| MEN | NA | NA |
-| MR | MTR | 48 |
-| MTU | NA | NA |
-| SBW | NA | NA |
-| SHC | SHC | 16 |
-| SIN | SIN | 83 |
-| SUV | NA | NA |
-| TBY | NA | NA |
-| TIC | NA | NA |
-| VE | VCP | 20 |
-| YG | YBG | 75 |
+I need to track down the male genitalic measurments, but I am including sample sizes from [Lucas et al. 2008](https://academic.oup.com/aesa/article-abstract/101/1/172/8476) and [Gompert et al 2013](https://academic.oup.com/evolut/article/67/9/2498/6851394). I am counting all of the Alasks samples.
+
+| Population | Wing ID | Wing sample size (N)| Male genitlai sample size (N) | 
+|------------|---------|---------------------| ------------------------------|
+| ABM | ABM | 25 | 15 |
+| BCR | BCR | 46 | 20 |
+| BHP | BHP | 18 | 26 (Big Pine) |
+| BKM | BKM | 40 | 20 (Emerson?) |
+| BTB | BTB | 43 | 17 |
+| CLH | CLH | 40 | 19 |
+| CP | CSP | 49 | 36 |
+| EP | EGP | 37 | 30 |
+| GNP | GNP | 81 | 10 |
+| HJ | NA | NA | 13 (BWP) |
+| HNV | HNV | 8 | 13 |
+| LS | LKS | 19 | 21 |
+| MEN | NA | NA | NA |
+| MR | MTR | 48 | 24 |
+| MTU | NA | NA | 6 |
+| SBW | NA | NA | 18 (Alaska) |
+| SHC | SHC | 16 | 9 |
+| SIN | SIN | 83 | 12 |
+| SUV | NA | NA | NA |
+| TBY | NA | NA | NA |
+| TIC | NA | NA | NA |
+| VE | VCP | 20 | 31 |
+| YG | YBG | 75 | 25 |
 
 # DNA Sequence Alignment
 
